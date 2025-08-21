@@ -1,0 +1,30 @@
+﻿openapi: 3.0.1
+info:
+  title: CRS Finance Plugin
+  version: "1.0"
+paths:
+  /api/generateReport:
+    post:
+      summary: Generate a financial report
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                prompt:
+                  type: string
+                format:
+                  type: string
+                  enum: [text, csv]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string

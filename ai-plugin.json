@@ -1,0 +1,15 @@
+﻿{
+  "schema_version":"v1",
+  "name_for_model":"crs_finance_plugin",
+  "name_for_human":"CRS Finance Plugin",
+  "description_for_model":"Generate and export CRS financial reports.",
+  "description_for_human":"Fetch P&L, balance sheet, or cash flow and get summaries or CSVs.",
+  "auth":{ "type":"none" },
+  "api":{
+    "type":"openapi",
+    "url":"https://your-vercel-url.com/openapi.yaml"
+  },
+  "logo_url":"https://your-vercel-url.com/logo.png",
+  "contact_email":"your@email.com",
+  "legal_info_url":"https://your-vercel-url.com/legal.html"
+}
